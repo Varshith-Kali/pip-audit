@@ -40,6 +40,9 @@ class TestVulnerabilityDescriptionChoice:
     def test_auto_to_bool_for_json(self):
         assert VulnerabilityDescriptionChoice.Auto.to_bool(OutputFormatChoice.Json) is True
 
+    def test_auto_to_bool_for_sarif(self):
+        assert VulnerabilityDescriptionChoice.Auto.to_bool(OutputFormatChoice.Sarif) is True
+
     def test_str(self):
         for choice in VulnerabilityDescriptionChoice:
             assert str(choice) == choice.value
@@ -56,6 +59,9 @@ class TestVulnerabilityAliasChoice:
 
     def test_auto_to_bool_for_json(self):
         assert VulnerabilityAliasChoice.Auto.to_bool(OutputFormatChoice.Json) is True
+
+    def test_auto_to_bool_for_sarif(self):
+        assert VulnerabilityAliasChoice.Auto.to_bool(OutputFormatChoice.Sarif) is True
 
     def test_str(self):
         for choice in VulnerabilityAliasChoice:

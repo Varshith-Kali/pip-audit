@@ -8,6 +8,14 @@ All versions prior to 0.0.9 are untracked.
 
 ## [Unreleased]
 
+### Added
+
+* `pip-audit` now supports a `sarif` output format (`-f sarif`), which emits
+  audit results as SARIF 2.1.0. Like `json`, the `sarif` format includes
+  vulnerability descriptions and aliases by default under `--desc=auto` and
+  `--aliases=auto`
+  ([#206](https://github.com/pypa/pip-audit/issues/206))
+
 ### Fixed
 
 * Editable requirements skipped with `--skip-editable` no longer require a hash

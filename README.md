@@ -164,7 +164,7 @@ options:
                         (default: False)
   -f FORMAT, --format FORMAT
                         the format to emit audit results in (choices: columns,
-                        json, cyclonedx-json, cyclonedx-xml, markdown)
+                        json, cyclonedx-json, cyclonedx-xml, markdown, sarif)
                         (default: columns)
   -s SERVICE, --vulnerability-service SERVICE
                         the vulnerability service to audit dependencies
@@ -179,14 +179,14 @@ options:
                         on any dependency (default: False)
   --desc [{on,off,auto}]
                         include a description for each vulnerability; `auto`
-                        defaults to `on` for the `json` format. This flag has
-                        no effect on the `cyclonedx-json` or `cyclonedx-xml`
-                        formats. (default: auto)
+                        defaults to `on` for the `json` and `sarif` formats.
+                        This flag has no effect on the `cyclonedx-json` or
+                        `cyclonedx-xml` formats. (default: auto)
   --aliases [{on,off,auto}]
                         includes alias IDs for each vulnerability; `auto`
-                        defaults to `on` for the `json` format. This flag has
-                        no effect on the `cyclonedx-json` or `cyclonedx-xml`
-                        formats. (default: auto)
+                        defaults to `on` for the `json` and `sarif` formats.
+                        This flag has no effect on the `cyclonedx-json` or
+                        `cyclonedx-xml` formats. (default: auto)
   --cache-dir CACHE_DIR
                         the directory to use as an HTTP cache for PyPI; uses
                         the `pip` HTTP cache by default (default: None)
